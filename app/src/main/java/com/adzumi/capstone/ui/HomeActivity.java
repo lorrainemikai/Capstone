@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.adzumi.capstone.R;
+
 public class HomeActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
