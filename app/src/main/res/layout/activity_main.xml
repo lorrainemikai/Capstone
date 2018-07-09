@@ -13,12 +13,12 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/welcomeLayout"
         android:layout_alignParentStart="true"
-        android:paddingBottom="30dp">
+        android:paddingBottom="20dp">
 
         <Button
             android:id="@+id/loginButton"
             android:layout_width="972px"
-            android:layout_height="136px"
+            android:layout_height="126px"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginEnd="8dp"
@@ -34,7 +34,7 @@
         <Button
             android:id="@+id/createUserButton"
             android:layout_width="972px"
-            android:layout_height="136px"
+            android:layout_height="126px"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginEnd="8dp"
