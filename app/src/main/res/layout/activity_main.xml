@@ -11,7 +11,7 @@
         android:id="@+id/loginLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/welcomeLayout"
+        android:layout_above="@+id/goBackLayout"
         android:layout_alignParentStart="true"
         android:paddingBottom="20dp">
 
@@ -29,7 +29,7 @@
             android:background="@drawable/loginbtn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+            app:layout_constraintTop_toBottomOf="@+id/confirmPasswordEditText" />
 
         <Button
             android:id="@+id/createUserButton"
@@ -48,7 +48,7 @@
             app:layout_constraintTop_toBottomOf="@+id/loginButton" />
 
         <EditText
-            android:id="@+id/passwordEditText"
+            android:id="@+id/confirmPasswordEditText"
             android:layout_width="972px"
             android:layout_height="118px"
             android:layout_marginEnd="8dp"
@@ -64,10 +64,10 @@
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText2" />
+            app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/passwordEditText"
             android:layout_width="972px"
             android:layout_height="118px"
             android:layout_marginEnd="8dp"
@@ -87,7 +87,7 @@
     </android.support.constraint.ConstraintLayout>
 
     <android.support.constraint.ConstraintLayout
-        android:id="@+id/welcomeLayout"
+        android:id="@+id/goBackLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

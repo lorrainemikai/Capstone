@@ -8,12 +8,12 @@
     android:background="@android:color/white">
 
     <android.support.constraint.ConstraintLayout
-        android:id="@+id/loginLayout"
+        android:id="@+id/registrationLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/welcomeLayout"
+        android:layout_height="288dp"
+        android:layout_above="@+id/goBackLayout"
         android:layout_alignParentStart="true"
-        android:paddingBottom="20dp">
+        android:paddingBottom="0dp">
 
         <Button
             android:id="@+id/loginButton"
@@ -21,12 +21,33 @@
             android:layout_height="126px"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/registerbutton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirmPasswordEditText" />
+
+        <EditText
+            android:id="@+id/confirmPasswordEditText"
+            android:layout_width="972px"
+            android:layout_height="98px"
             android:layout_marginEnd="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
-            android:background="@drawable/registerbutton"
+            android:background="@drawable/confirminput"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:paddingBottom="20dp"
+            android:paddingLeft="140dp"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
@@ -34,36 +55,50 @@
         <EditText
             android:id="@+id/passwordEditText"
             android:layout_width="972px"
-            android:layout_height="118px"
+            android:layout_height="98px"
             android:layout_marginEnd="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
-            android:background="@drawable/passwordinput"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:paddingBottom="20dp"
-            android:paddingLeft="110dp"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText2" />
-
-        <EditText
-            android:id="@+id/editText2"
-            android:layout_width="972px"
-            android:layout_height="118px"
-            android:layout_marginEnd="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/logininput"
+            android:background="@drawable/passwrdinput"
             android:ems="10"
             android:inputType="textEmailAddress"
             android:paddingBottom="20dp"
             android:paddingLeft="70dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailEditText" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="972px"
+            android:layout_height="98px"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/emailinput"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameEditText" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="972px"
+            android:layout_height="98px"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/nameinput"
+            android:ems="10"
+            android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -71,26 +106,27 @@
     </android.support.constraint.ConstraintLayout>
 
     <android.support.constraint.ConstraintLayout
-        android:id="@+id/welcomeLayout"
+        android:id="@+id/goBackLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="57dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="0dp"
         android:background="#f4f4f4"
-        android:padding="30dp">
+        android:padding="10dp">
 
         <TextView
-            android:id="@+id/welcomeTextView"
+            android:id="@+id/loginTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="30dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
             android:fontFamily="@font/lato_light"
             android:gravity="center"
-            android:text="Welcome! With Capstone App, consider yourself backed up with services on the go."
+            android:text="Already have an account? Go Back."
             android:textSize="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
