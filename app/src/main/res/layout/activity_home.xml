@@ -206,7 +206,7 @@
                             android:layout_alignParentTop="true"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="12dp"
-                            android:src="@drawable/salon_icon" />
+                            android:src="@drawable/clean_icon" />
 
                         <TextView
                             android:id="@+id/cleantitleTextView"
@@ -217,7 +217,7 @@
                             android:ellipsize="end"
                             android:gravity="center"
                             android:singleLine="true"
-                            android:text="Salon"
+                            android:text="Cleaning"
                             android:textSize="20dp"
                             app:fontFamily="@font/lato_bold" />
 
@@ -230,7 +230,7 @@
                             android:layout_below="@+id/cleantitleTextView"
                             android:fontFamily="@font/lato_lightitalic"
                             android:gravity="center"
-                            android:text="Services"
+                            android:text="Home Services"
                             android:textSize="10dp" />
 
                     </RelativeLayout>
