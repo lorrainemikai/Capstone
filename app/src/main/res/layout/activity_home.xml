@@ -7,7 +7,7 @@
     tools:context=".ui.HomeActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/appBarImageView"
         android:layout_width="wrap_content"
         android:layout_height="153dp"
         android:scaleType="centerCrop"
@@ -25,17 +25,21 @@
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
     <RelativeLayout
+        android:id="@+id/personalServicesLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/imageView2"
-        android:paddingBottom="10dp"
+        android:layout_below="@+id/appBarImageView"
+        android:background="@drawable/border"
+        android:paddingBottom="25dp"
         android:paddingLeft="10dp"
         android:paddingTop="10dp">
 
         <HorizontalScrollView
             android:layout_width="wrap_content"
             android:layout_height="127dp"
+            android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/personalTextView">
 
@@ -83,6 +87,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
                             android:layout_below="@+id/salontitleTextView"
                             android:fontFamily="@font/lato_lightitalic"
                             android:gravity="center"
@@ -94,62 +99,47 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/tailorLinearLayout"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/barberLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <RelativeLayout
-                        android:layout_width="fill_parent"
+                        android:layout_width="101dp"
                         android:layout_height="wrap_content">
 
                         <ImageView
-                            android:id="@+id/tailorImageView"
-                            android:layout_width="61dp"
-                            android:layout_height="30dp"
-                            android:layout_alignBottom="@+id/tailorLocationTextView"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentStart="true"
-                            android:layout_marginLeft="23dp"
-                            android:layout_marginStart="23dp"
-                            android:src="@drawable/baseline_search_24" />
+                            android:id="@+id/barberImageView"
+                            android:layout_width="63dp"
+                            android:layout_height="59dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="12dp"
+                            android:src="@drawable/barber_icon" />
 
                         <TextView
-                            android:id="@+id/tailortitleTextView"
-                            android:layout_width="wrap_content"
+                            android:id="@+id/barbertitleTextView"
+                            android:layout_width="80dp"
                             android:layout_height="wrap_content"
-                            android:layout_alignLeft="@+id/tailorRatingsTextView"
-                            android:layout_alignParentTop="true"
-                            android:layout_alignStart="@+id/tailorRatingsTextView"
+                            android:layout_below="@+id/barberImageView"
+                            android:layout_centerHorizontal="true"
                             android:ellipsize="end"
+                            android:gravity="center"
                             android:singleLine="true"
-                            android:text="AidEx Nairobi Conference 2018"
+                            android:text="Barber"
+                            android:textSize="20dp"
                             app:fontFamily="@font/lato_bold" />
 
                         <TextView
-                            android:id="@+id/tailorLocationTextView"
-                            android:layout_width="wrap_content"
+                            android:id="@+id/barberLocationTextView"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentStart="true"
-                            android:layout_below="@+id/tailortitleTextView"
-                            android:layout_marginLeft="94dp"
-                            android:layout_marginStart="94dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_below="@+id/barbertitleTextView"
                             android:fontFamily="@font/lato_lightitalic"
-                            android:text="Wed, Sep 12 8:30 P.M."
-                            android:textSize="10dp" />
-
-                        <TextView
-                            android:id="@+id/tailorRatingsTextView"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentStart="true"
-                            android:layout_below="@+id/tailorLocationTextView"
-                            android:layout_marginLeft="94dp"
-                            android:layout_marginStart="94dp"
-                            android:text="Safari Park Hotel &amp; Casino, Nairobi City"
+                            android:gravity="center"
+                            android:text="Services"
                             android:textSize="10dp" />
 
                     </RelativeLayout>
@@ -170,7 +160,7 @@
             android:text="My Services"
             android:textColor="@color/colorTextLight"
             android:textSize="15sp"
-            app:fontFamily="@font/lato_regular" />
+            app:fontFamily="@font/lato_light" />
 
     </RelativeLayout>
 
