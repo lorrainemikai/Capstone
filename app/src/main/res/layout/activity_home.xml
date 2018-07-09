@@ -27,24 +27,23 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView2"
         android:paddingBottom="10dp"
         android:paddingLeft="10dp"
         android:paddingTop="10dp">
 
         <HorizontalScrollView
             android:layout_width="wrap_content"
-            android:layout_height="145dp"
+            android:layout_height="127dp"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="166dp">
+            android:layout_below="@+id/personalTextView">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="@drawable/layout_border"
                 android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:padding="10dp">
+                android:orientation="horizontal">
 
                 <LinearLayout
                     android:id="@+id/salonLinearLayout"
@@ -54,8 +53,8 @@
                     android:orientation="vertical">
 
                     <RelativeLayout
-                        android:layout_width="141dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="101dp"
+                        android:layout_height="wrap_content">
 
                         <ImageView
                             android:id="@+id/salonImageView"
@@ -63,7 +62,7 @@
                             android:layout_height="59dp"
                             android:layout_alignParentTop="true"
                             android:layout_centerHorizontal="true"
-                            android:layout_marginTop="22dp"
+                            android:layout_marginTop="12dp"
                             android:src="@drawable/salon_icon" />
 
                         <TextView
@@ -81,13 +80,12 @@
 
                         <TextView
                             android:id="@+id/salonLocationTextView"
-                            android:layout_width="80dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginBottom="11dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_below="@+id/salontitleTextView"
                             android:fontFamily="@font/lato_lightitalic"
-                            android:gravity="center_horizontal"
+                            android:gravity="center"
                             android:text="Services"
                             android:textSize="10dp" />
 
@@ -161,6 +159,18 @@
             </LinearLayout>
 
         </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/personalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13dp"
+            android:text="My Services"
+            android:textColor="@color/colorTextLight"
+            android:textSize="15sp"
+            app:fontFamily="@font/lato_regular" />
 
     </RelativeLayout>
 
