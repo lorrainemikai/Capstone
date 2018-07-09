@@ -15,8 +15,6 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
-
-
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
         android:layout_height="wrap_content"
@@ -26,135 +24,147 @@
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
-    <HorizontalScrollView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="145dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="166dp">
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp">
 
-        <LinearLayout
+        <HorizontalScrollView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
+            android:layout_height="145dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="166dp">
 
             <LinearLayout
-                android:id="@+id/salonLinearLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:background="@drawable/layout_border"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
 
-                <RelativeLayout
-                    android:layout_width="141dp"
-                    android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/salonLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
 
-                    <ImageView
-                        android:id="@+id/salonImageView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_marginStart="31dp"
-                        android:layout_marginTop="21dp"
-                        android:src="@drawable/salon_icon" />
+                    <RelativeLayout
+                        android:layout_width="141dp"
+                        android:layout_height="match_parent">
 
-                    <TextView
-                        android:id="@+id/salontitleTextView"
-                        android:layout_width="80dp"
-                        android:layout_height="wrap_content"
-                        android:layout_alignStart="@+id/salonImageView"
-                        android:layout_below="@+id/salonImageView"
-                        android:ellipsize="end"
-                        android:gravity="center"
-                        android:singleLine="true"
-                        android:text="Salon"
-                        android:textSize="20dp"
-                        app:fontFamily="@font/lato_bold" />
+                        <ImageView
+                            android:id="@+id/salonImageView"
+                            android:layout_width="63dp"
+                            android:layout_height="59dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="22dp"
+                            android:src="@drawable/salon_icon" />
 
-                    <TextView
-                        android:id="@+id/salonLocationTextView"
-                        android:layout_width="80dp"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_alignStart="@+id/salonImageView"
-                        android:fontFamily="@font/lato_lightitalic"
-                        android:gravity="center_horizontal"
-                        android:text="Services"
-                        android:textSize="10dp" />
+                        <TextView
+                            android:id="@+id/salontitleTextView"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/salonImageView"
+                            android:layout_centerHorizontal="true"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="Salon"
+                            android:textSize="20dp"
+                            app:fontFamily="@font/lato_bold" />
 
-                </RelativeLayout>
+                        <TextView
+                            android:id="@+id/salonLocationTextView"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="11dp"
+                            android:fontFamily="@font/lato_lightitalic"
+                            android:gravity="center_horizontal"
+                            android:text="Services"
+                            android:textSize="10dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tailorLinearLayout"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/tailorImageView"
+                            android:layout_width="61dp"
+                            android:layout_height="30dp"
+                            android:layout_alignBottom="@+id/tailorLocationTextView"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="23dp"
+                            android:layout_marginStart="23dp"
+                            android:src="@drawable/baseline_search_24" />
+
+                        <TextView
+                            android:id="@+id/tailortitleTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/tailorRatingsTextView"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignStart="@+id/tailorRatingsTextView"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="AidEx Nairobi Conference 2018"
+                            app:fontFamily="@font/lato_bold" />
+
+                        <TextView
+                            android:id="@+id/tailorLocationTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/tailortitleTextView"
+                            android:layout_marginLeft="94dp"
+                            android:layout_marginStart="94dp"
+                            android:fontFamily="@font/lato_lightitalic"
+                            android:text="Wed, Sep 12 8:30 P.M."
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/tailorRatingsTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/tailorLocationTextView"
+                            android:layout_marginLeft="94dp"
+                            android:layout_marginStart="94dp"
+                            android:text="Safari Park Hotel &amp; Casino, Nairobi City"
+                            android:textSize="10dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
 
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/tailorLinearLayout"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical">
+        </HorizontalScrollView>
 
-                <RelativeLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:id="@+id/tailorImageView"
-                        android:layout_width="61dp"
-                        android:layout_height="30dp"
-                        android:layout_alignBottom="@+id/tailorLocationTextView"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_marginLeft="23dp"
-                        android:layout_marginStart="23dp"
-                        android:src="@drawable/baseline_search_24" />
-
-                    <TextView
-                        android:id="@+id/tailortitleTextView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignLeft="@+id/tailorRatingsTextView"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignStart="@+id/tailorRatingsTextView"
-                        android:ellipsize="end"
-                        android:singleLine="true"
-                        android:text="AidEx Nairobi Conference 2018"
-                        app:fontFamily="@font/lato_bold" />
-
-                    <TextView
-                        android:id="@+id/tailorLocationTextView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_below="@+id/tailortitleTextView"
-                        android:layout_marginLeft="94dp"
-                        android:layout_marginStart="94dp"
-                        android:fontFamily="@font/lato_lightitalic"
-                        android:text="Wed, Sep 12 8:30 P.M."
-                        android:textSize="10dp" />
-
-                    <TextView
-                        android:id="@+id/tailorRatingsTextView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_below="@+id/tailorLocationTextView"
-                        android:layout_marginLeft="94dp"
-                        android:layout_marginStart="94dp"
-                        android:text="Safari Park Hotel &amp; Casino, Nairobi City"
-                        android:textSize="10dp" />
-
-                </RelativeLayout>
-
-            </LinearLayout>
-
-        </LinearLayout>
+    </RelativeLayout>
 
 
-    </HorizontalScrollView>
 
 
 </RelativeLayout>
