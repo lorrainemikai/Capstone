@@ -38,21 +38,21 @@
 
         <HorizontalScrollView
             android:layout_width="wrap_content"
-            android:layout_height="127dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/personalTextView">
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
                 <LinearLayout
                     android:id="@+id/salonLinearLayout"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -66,7 +66,6 @@
                             android:layout_height="59dp"
                             android:layout_alignParentTop="true"
                             android:layout_centerHorizontal="true"
-                            android:layout_marginTop="12dp"
                             android:src="@drawable/salon_icon" />
 
                         <TextView
@@ -101,7 +100,7 @@
                 <LinearLayout
                     android:id="@+id/barberLinearLayout"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -115,7 +114,6 @@
                             android:layout_height="59dp"
                             android:layout_alignParentTop="true"
                             android:layout_centerHorizontal="true"
-                            android:layout_marginTop="12dp"
                             android:src="@drawable/barber_icon" />
 
                         <TextView
@@ -155,9 +153,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="13dp"
-            android:text="My Services"
+            android:text="Bookings"
             android:textColor="@color/colorTextLight"
             android:textSize="15sp"
             app:fontFamily="@font/lato_light" />
@@ -177,26 +176,26 @@
 
         <HorizontalScrollView
             android:layout_width="wrap_content"
-            android:layout_height="127dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/homeTextView">
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
                 <LinearLayout
                     android:id="@+id/cleanLinearLayout"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <RelativeLayout
-                        android:layout_width="121dp"
+                        android:layout_width="111dp"
                         android:layout_height="wrap_content">
 
                         <ImageView
@@ -240,12 +239,12 @@
                 <LinearLayout
                     android:id="@+id/electricalLinearLayout"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <RelativeLayout
-                        android:layout_width="121dp"
+                        android:layout_width="111dp"
                         android:layout_height="wrap_content">
 
                         <ImageView
@@ -288,12 +287,12 @@
                 <LinearLayout
                     android:id="@+id/plumbingLinearLayout"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <RelativeLayout
-                        android:layout_width="121dp"
+                        android:layout_width="111dp"
                         android:layout_height="wrap_content">
 
                         <ImageView
@@ -336,12 +335,12 @@
                 <LinearLayout
                     android:id="@+id/pestLinearLayout"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <RelativeLayout
-                        android:layout_width="121dp"
+                        android:layout_width="111dp"
                         android:layout_height="wrap_content">
 
                         <ImageView
@@ -372,6 +371,54 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentEnd="true"
                             android:layout_below="@+id/pesttitleTextView"
+                            android:fontFamily="@font/lato_lightitalic"
+                            android:gravity="center"
+                            android:text="Home Services"
+                            android:textSize="10dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/gardenLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/gardenImageView"
+                            android:layout_width="53dp"
+                            android:layout_height="49dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="12dp"
+                            android:src="@drawable/garden_icon" />
+
+                        <TextView
+                            android:id="@+id/gardentitleTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/gardenImageView"
+                            android:layout_centerHorizontal="true"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="Gardening"
+                            android:textSize="16dp"
+                            app:fontFamily="@font/lato_bold" />
+
+                        <TextView
+                            android:id="@+id/carpenterLocationTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_below="@+id/gardentitleTextView"
                             android:fontFamily="@font/lato_lightitalic"
                             android:gravity="center"
                             android:text="Home Services"
