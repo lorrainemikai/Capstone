@@ -296,13 +296,33 @@
             android:id="@+id/homeTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="13dp"
-            android:text="Choose a Service"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/homeTextView"
+            android:layout_marginEnd="26dp"
             android:textColor="@color/colorTextLight"
             android:textSize="13sp"
             app:fontFamily="@font/lato_light" />
+
+        <TextView
+            android:id="@+id/homeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="13dp"
+            android:text="Choose a Service"
+            android:textColor="@color/ColorPrimaryDarkest"
+            android:textSize="13sp"
+            app:fontFamily="@font/lato_light" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/baseline_arrow_right_alt_24" />
 
     </RelativeLayout>
 
@@ -311,35 +331,97 @@
         android:layout_height="381dp"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/homeServicesLayout"
-        android:background="@drawable/border">
+        android:background="@drawable/border"
+        android:layout_alignParentLeft="true">
 
-        <RelativeLayout
-            android:id="@+id/personalServicesLayout"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:paddingBottom="25dp"
-            android:paddingLeft="10dp"
-            android:paddingTop="10dp">
+            android:layout_height="380dp"
+            android:orientation="vertical">
 
-
-            <TextView
-                android:id="@+id/personalTextView"
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:id="@+id/hairColoringLayout"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="13dp"
-                android:text="Bookings"
-                android:textColor="@color/colorTextLight"
-                android:textSize="15sp"
-                app:fontFamily="@font/lato_light" />
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="30dp"
+                android:paddingBottom="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp">
 
-        </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/HairColoringImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="137dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/coloring" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/spaLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="0dp">
+
+
+                <ImageView
+                    android:id="@+id/spaImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="137dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/spa" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="0dp">
+
+
+                <ImageView
+                    android:id="@+id/nailsImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="137dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/nails" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
 
     </ScrollView>
+
+    <TextView
+        android:id="@+id/featuresTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="285dp"
+        android:text="Our Products and Services"
+        android:textColor="@color/ColorPrimaryDarkest"
+        android:textSize="14sp"
+        app:fontFamily="@font/lato_light" />
 
 </RelativeLayout>
