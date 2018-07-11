@@ -26,9 +26,10 @@
         <activity
             android:name=".ui.HomeActivity"
             android:theme="@style/AppTheme"
-            android:windowSoftInputMode="adjustPan">
-
-        </activity>
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.HairServicesActivity"
+            android:label="@string/title_activity_hair_services"></activity>
     </application>
 
 </manifest>
