@@ -24,155 +24,15 @@
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
-    <!--<RelativeLayout-->
-        <!--android:id="@+id/personalServicesLayout"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_alignParentLeft="true"-->
-        <!--android:layout_alignParentStart="true"-->
-        <!--android:layout_below="@+id/appBarImageView"-->
-        <!--android:background="@drawable/border"-->
-        <!--android:paddingBottom="25dp"-->
-        <!--android:paddingLeft="10dp"-->
-        <!--android:paddingTop="10dp">-->
-
-        <!--<HorizontalScrollView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_alignParentLeft="true"-->
-            <!--android:layout_alignParentStart="true"-->
-            <!--android:layout_below="@+id/personalTextView">-->
-
-            <!--<LinearLayout-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:gravity="center_vertical"-->
-                <!--android:orientation="horizontal">-->
-
-                <!--<LinearLayout-->
-                    <!--android:id="@+id/salonLinearLayout"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:gravity="center"-->
-                    <!--android:orientation="vertical">-->
-
-                    <!--<RelativeLayout-->
-                        <!--android:layout_width="101dp"-->
-                        <!--android:layout_height="wrap_content">-->
-
-                        <!--<ImageView-->
-                            <!--android:id="@+id/salonImageView"-->
-                            <!--android:layout_width="63dp"-->
-                            <!--android:layout_height="59dp"-->
-                            <!--android:layout_alignParentTop="true"-->
-                            <!--android:layout_centerHorizontal="true"-->
-                            <!--android:src="@drawable/salon_icon" />-->
-
-                        <!--<TextView-->
-                            <!--android:id="@+id/salontitleTextView"-->
-                            <!--android:layout_width="80dp"-->
-                            <!--android:layout_height="wrap_content"-->
-                            <!--android:layout_below="@+id/salonImageView"-->
-                            <!--android:layout_centerHorizontal="true"-->
-                            <!--android:ellipsize="end"-->
-                            <!--android:gravity="center"-->
-                            <!--android:singleLine="true"-->
-                            <!--android:text="Salon"-->
-                            <!--android:textSize="20dp"-->
-                            <!--app:fontFamily="@font/lato_bold" />-->
-
-                        <!--<TextView-->
-                            <!--android:id="@+id/salonLocationTextView"-->
-                            <!--android:layout_width="match_parent"-->
-                            <!--android:layout_height="wrap_content"-->
-                            <!--android:layout_alignParentEnd="true"-->
-                            <!--android:layout_alignParentRight="true"-->
-                            <!--android:layout_below="@+id/salontitleTextView"-->
-                            <!--android:fontFamily="@font/lato_lightitalic"-->
-                            <!--android:gravity="center"-->
-                            <!--android:text="Services"-->
-                            <!--android:textSize="10dp" />-->
-
-                    <!--</RelativeLayout>-->
-
-                <!--</LinearLayout>-->
-
-                <!--<LinearLayout-->
-                    <!--android:id="@+id/barberLinearLayout"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:gravity="center"-->
-                    <!--android:orientation="vertical">-->
-
-                    <!--<RelativeLayout-->
-                        <!--android:layout_width="101dp"-->
-                        <!--android:layout_height="wrap_content">-->
-
-                        <!--<ImageView-->
-                            <!--android:id="@+id/barberImageView"-->
-                            <!--android:layout_width="63dp"-->
-                            <!--android:layout_height="59dp"-->
-                            <!--android:layout_alignParentTop="true"-->
-                            <!--android:layout_centerHorizontal="true"-->
-                            <!--android:src="@drawable/barber_icon" />-->
-
-                        <!--<TextView-->
-                            <!--android:id="@+id/barbertitleTextView"-->
-                            <!--android:layout_width="80dp"-->
-                            <!--android:layout_height="wrap_content"-->
-                            <!--android:layout_below="@+id/barberImageView"-->
-                            <!--android:layout_centerHorizontal="true"-->
-                            <!--android:ellipsize="end"-->
-                            <!--android:gravity="center"-->
-                            <!--android:singleLine="true"-->
-                            <!--android:text="Barber"-->
-                            <!--android:textSize="20dp"-->
-                            <!--app:fontFamily="@font/lato_bold" />-->
-
-                        <!--<TextView-->
-                            <!--android:id="@+id/barberLocationTextView"-->
-                            <!--android:layout_width="match_parent"-->
-                            <!--android:layout_height="wrap_content"-->
-                            <!--android:layout_alignParentEnd="true"-->
-                            <!--android:layout_below="@+id/barbertitleTextView"-->
-                            <!--android:fontFamily="@font/lato_lightitalic"-->
-                            <!--android:gravity="center"-->
-                            <!--android:text="Services"-->
-                            <!--android:textSize="10dp" />-->
-
-                    <!--</RelativeLayout>-->
-
-                <!--</LinearLayout>-->
-
-            <!--</LinearLayout>-->
-
-        <!--</HorizontalScrollView>-->
-
-        <!--<TextView-->
-            <!--android:id="@+id/personalTextView"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_alignParentTop="true"-->
-            <!--android:layout_marginBottom="10dp"-->
-            <!--android:layout_marginLeft="10dp"-->
-            <!--android:layout_marginTop="13dp"-->
-            <!--android:text="Bookings"-->
-            <!--android:textColor="@color/colorTextLight"-->
-            <!--android:textSize="15sp"-->
-            <!--app:fontFamily="@font/lato_light" />-->
-
-    <!--</RelativeLayout>-->
-
     <RelativeLayout
         android:id="@+id/homeServicesLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:background="@drawable/border"
-        android:paddingBottom="25dp"
+        android:layout_below="@+id/appBarImageView"
+        android:paddingBottom="15dp"
         android:paddingLeft="10dp"
-        android:paddingTop="10dp">
+        android:paddingTop="5dp">
 
         <HorizontalScrollView
             android:layout_width="wrap_content"
@@ -195,17 +55,17 @@
                     android:orientation="vertical">
 
                     <RelativeLayout
-                        android:layout_width="111dp"
+                        android:layout_width="80dp"
                         android:layout_height="wrap_content">
 
                         <ImageView
                             android:id="@+id/cleanImageView"
-                            android:layout_width="53dp"
-                            android:layout_height="49dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:layout_alignParentTop="true"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="12dp"
-                            android:src="@drawable/clean_icon" />
+                            android:src="@drawable/hair_icon" />
 
                         <TextView
                             android:id="@+id/cleantitleTextView"
@@ -216,8 +76,8 @@
                             android:ellipsize="end"
                             android:gravity="center"
                             android:singleLine="true"
-                            android:text="Cleaning"
-                            android:textSize="16dp"
+                            android:text="Hair"
+                            android:textSize="14dp"
                             app:fontFamily="@font/lato_bold" />
 
                         <TextView
@@ -229,8 +89,8 @@
                             android:layout_below="@+id/cleantitleTextView"
                             android:fontFamily="@font/lato_lightitalic"
                             android:gravity="center"
-                            android:text="Home Services"
-                            android:textSize="10dp" />
+                            android:text="Services"
+                            android:textSize="9dp" />
 
                     </RelativeLayout>
 
@@ -244,17 +104,17 @@
                     android:orientation="vertical">
 
                     <RelativeLayout
-                        android:layout_width="111dp"
+                        android:layout_width="80dp"
                         android:layout_height="wrap_content">
 
                         <ImageView
                             android:id="@+id/electricalImageView"
-                            android:layout_width="53dp"
-                            android:layout_height="49dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:layout_alignParentTop="true"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="12dp"
-                            android:src="@drawable/electrical_icon" />
+                            android:src="@drawable/makeup_icon" />
 
                         <TextView
                             android:id="@+id/electricaltitleTextView"
@@ -265,8 +125,8 @@
                             android:ellipsize="end"
                             android:gravity="center"
                             android:singleLine="true"
-                            android:text="Electrical"
-                            android:textSize="16dp"
+                            android:text="MakeUp"
+                            android:textSize="14dp"
                             app:fontFamily="@font/lato_bold" />
 
                         <TextView
@@ -277,8 +137,8 @@
                             android:layout_below="@+id/electricaltitleTextView"
                             android:fontFamily="@font/lato_lightitalic"
                             android:gravity="center"
-                            android:text="Home Services"
-                            android:textSize="10dp" />
+                            android:text="Services"
+                            android:textSize="9dp" />
 
                     </RelativeLayout>
 
@@ -292,17 +152,17 @@
                     android:orientation="vertical">
 
                     <RelativeLayout
-                        android:layout_width="111dp"
+                        android:layout_width="80dp"
                         android:layout_height="wrap_content">
 
                         <ImageView
                             android:id="@+id/plumbingImageView"
-                            android:layout_width="53dp"
-                            android:layout_height="49dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:layout_alignParentTop="true"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="12dp"
-                            android:src="@drawable/plumbing_icon" />
+                            android:src="@drawable/nails_icon" />
 
                         <TextView
                             android:id="@+id/plumbingtitleTextView"
@@ -313,8 +173,8 @@
                             android:ellipsize="end"
                             android:gravity="center"
                             android:singleLine="true"
-                            android:text="Plumbing"
-                            android:textSize="16dp"
+                            android:text="Nails"
+                            android:textSize="14dp"
                             app:fontFamily="@font/lato_bold" />
 
                         <TextView
@@ -325,8 +185,8 @@
                             android:layout_below="@+id/plumbingtitleTextView"
                             android:fontFamily="@font/lato_lightitalic"
                             android:gravity="center"
-                            android:text="Home Services"
-                            android:textSize="10dp" />
+                            android:text="Services"
+                            android:textSize="9dp" />
 
                     </RelativeLayout>
 
@@ -340,17 +200,17 @@
                     android:orientation="vertical">
 
                     <RelativeLayout
-                        android:layout_width="111dp"
+                        android:layout_width="80dp"
                         android:layout_height="wrap_content">
 
                         <ImageView
                             android:id="@+id/pestImageView"
-                            android:layout_width="53dp"
-                            android:layout_height="49dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:layout_alignParentTop="true"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="12dp"
-                            android:src="@drawable/pest_icon" />
+                            android:src="@drawable/spa_icon" />
 
                         <TextView
                             android:id="@+id/pesttitleTextView"
@@ -361,8 +221,8 @@
                             android:ellipsize="end"
                             android:gravity="center"
                             android:singleLine="true"
-                            android:text="Furmigation"
-                            android:textSize="16dp"
+                            android:text="Spa"
+                            android:textSize="14dp"
                             app:fontFamily="@font/lato_bold" />
 
                         <TextView
@@ -373,8 +233,8 @@
                             android:layout_below="@+id/pesttitleTextView"
                             android:fontFamily="@font/lato_lightitalic"
                             android:gravity="center"
-                            android:text="Home Services"
-                            android:textSize="10dp" />
+                            android:text="Services"
+                            android:textSize="9dp" />
 
                     </RelativeLayout>
 
@@ -388,13 +248,13 @@
                     android:orientation="vertical">
 
                     <RelativeLayout
-                        android:layout_width="111dp"
+                        android:layout_width="80dp"
                         android:layout_height="wrap_content">
 
                         <ImageView
                             android:id="@+id/gardenImageView"
-                            android:layout_width="53dp"
-                            android:layout_height="49dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:layout_alignParentTop="true"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="12dp"
@@ -410,7 +270,7 @@
                             android:gravity="center"
                             android:singleLine="true"
                             android:text="Gardening"
-                            android:textSize="16dp"
+                            android:textSize="14dp"
                             app:fontFamily="@font/lato_bold" />
 
                         <TextView
@@ -422,7 +282,7 @@
                             android:fontFamily="@font/lato_lightitalic"
                             android:gravity="center"
                             android:text="Home Services"
-                            android:textSize="10dp" />
+                            android:textSize="9dp" />
 
                     </RelativeLayout>
 
@@ -439,12 +299,47 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="13dp"
-            android:text="Home Services"
+            android:text="Choose a Service"
             android:textColor="@color/colorTextLight"
-            android:textSize="15sp"
+            android:textSize="13sp"
             app:fontFamily="@font/lato_light" />
 
     </RelativeLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="381dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/homeServicesLayout"
+        android:background="@drawable/border">
+
+        <RelativeLayout
+            android:id="@+id/personalServicesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingBottom="25dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp">
+
+
+            <TextView
+                android:id="@+id/personalTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="13dp"
+                android:text="Bookings"
+                android:textColor="@color/colorTextLight"
+                android:textSize="15sp"
+                app:fontFamily="@font/lato_light" />
+
+        </RelativeLayout>
+
+    </ScrollView>
 
 </RelativeLayout>
