@@ -37,7 +37,7 @@
 
         <activity
             android:name=".ui.HairIntroActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme">
 
              <meta-data
              android:name="android.support.PARENT_ACTIVITY"
