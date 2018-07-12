@@ -37,7 +37,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view){
         if (view == mCleanImageView){
-            Intent intent = new Intent(HomeActivity.this, HairServicesActivity.class);
+            Intent intent = new Intent(HomeActivity.this, HairIntroActivity.class);
             startActivity(intent);
         }
     }
