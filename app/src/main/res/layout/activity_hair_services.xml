@@ -16,31 +16,217 @@
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="500dp"
             android:layout_marginTop="70dp"
             android:orientation="vertical">
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="600dp">
+
+                <RadioGroup
+                    android:id="@+id/firstQRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/secondQuestionTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="-168dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:checked="false"
+                        android:fontFamily="@font/lato_light"
+                        android:text="Short"
+                        android:textColor="@color/colorTextLight"
+                        android:textColorLink="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:checked="false"
+                        android:fontFamily="@font/lato_light"
+                        android:text="Braid"
+                        android:textColor="@color/colorTextLight"
+                        android:textColorLink="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:checked="false"
+                        android:fontFamily="@font/lato_light"
+                        android:text="Long"
+                        android:textColor="@color/colorTextLight"
+                        android:textColorLink="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:checked="false"
+                        android:fontFamily="@font/lato_light"
+                        android:text="DreadLock"
+                        android:textColor="@color/colorTextLight"
+                        android:textColorLink="@color/colorPrimary"
+                        android:textSize="18sp" />
+                </RadioGroup>
 
                 <TextView
                     android:id="@+id/firstQuestionTextView"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="94dp"
                     android:gravity="center"
                     android:text="How would you describe your hair?"
                     android:textColor="@color/colorTextLight"
-                    android:textSize="20sp"
+                    android:textSize="25sp"
                     app:fontFamily="@font/lato_light" />
 
-            </RelativeLayout>
+                <TextView
+                    android:id="@+id/secondQuestionTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/firstQuestionTextView"
+                    android:layout_marginTop="187dp"
+                    android:text="What service would you like?"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="25sp"
+                    app:fontFamily="@font/lato_light" />
 
+                <TextView
+                    android:id="@+id/thirdQuestionTextView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/firstQuestionTextView"
+                    android:layout_marginBottom="118dp"
+                    android:text="When would you like to come?"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="25sp"
+                    app:fontFamily="@font/lato_light" />
+
+                <RadioGroup
+                    android:id="@+id/secondQRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/firstQuestionTextView"
+                    android:layout_marginBottom="173dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/haircutRD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:checked="false"
+                        android:fontFamily="@font/lato_light"
+                        android:text="HairCut"
+                        android:textColor="@color/colorTextLight"
+                        android:textColorLink="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:checked="false"
+                        android:fontFamily="@font/lato_light"
+                        android:text="Wash and BlowDry"
+                        android:textColor="@color/colorTextLight"
+                        android:textColorLink="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:checked="false"
+                        android:fontFamily="@font/lato_light"
+                        android:text="Braiding"
+                        android:textColor="@color/colorTextLight"
+                        android:textColorLink="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:checked="false"
+                        android:fontFamily="@font/lato_light"
+                        android:text="Extensions"
+                        android:textColor="@color/colorTextLight"
+                        android:textColorLink="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:checked="false"
+                        android:fontFamily="@font/lato_light"
+                        android:text="Weave and Wigs"
+                        android:textColor="@color/colorTextLight"
+                        android:textColorLink="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:checked="false"
+                        android:fontFamily="@font/lato_light"
+                        android:text="Hair Coloring and Dying"
+                        android:textColor="@color/colorTextLight"
+                        android:textColorLink="@color/colorPrimary"
+                        android:textSize="18sp" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/formHeaderTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="21dp"
+                    android:background="@drawable/bottom_border"
+                    android:text="Please Fill the Form"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp"
+                    app:fontFamily="@font/lato_bold" />
+
+                <EditText
+                    android:id="@+id/editDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/firstQuestionTextView"
+                    android:layout_below="@+id/thirdQuestionTextView2"
+                    android:layout_marginTop="-118dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="date" />
+
+            </RelativeLayout>
 
         </LinearLayout>
 

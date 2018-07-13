@@ -1,21 +1,36 @@
 package com.adzumi.capstone.ui;
 
+import android.app.DatePickerDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.DatePicker;
+import android.widget.EditText;
 
 import com.adzumi.capstone.R;
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class HairServicesActivity extends AppCompatActivity {
+public class HairServicesActivity extends AppCompatActivity implements View.OnClickListener {
 
     @BindView(R.id.my_toolbar) Toolbar myToolbar;
+    @BindView(R.id.editDate) EditText editDate;
+    Context context = this;
+    Calendar myCalendar = Calendar.getInstance();
+    String dateFormat = "dd.MM.yyyy";
+    DatePickerDialog.OnDateSetListener date;
+    SimpleDateFormat sdf = new SimpleDateFormat(dateFormat, Locale.FRENCH);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +38,41 @@ public class HairServicesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_hair_services);
         ButterKnife.bind(this);
 
+        // init - set date to current date
+        long currentdate = System.currentTimeMillis();
+        String dateString = sdf.format(currentdate);
+        editDate.setText(dateString);
+
+        // set calendar date and update editDate
+        date = new DatePickerDialog.OnDateSetListener() {
+
+            @Override
+            public void onDateSet(DatePicker view, int year, int monthOfYear,
+                                  int dayOfMonth) {
+                // TODO Auto-generated method stub
+                myCalendar.set(Calendar.YEAR, year);
+                myCalendar.set(Calendar.MONTH, monthOfYear);
+                myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                updateDate();
+            }
+
+        };
+
+        editDate.setOnClickListener(this);
         setSupportActionBar(myToolbar);
+    }
+
+    @Override
+    public void onClick(View view){
+        if (view == editDate){
+            new DatePickerDialog(context, date, myCalendar
+                    .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
+                    myCalendar.get(Calendar.DAY_OF_MONTH)).show();
+        }
+    }
+
+    private void updateDate() {
+        editDate.setText(sdf.format(myCalendar.getTime()));
     }
 
     @Override
