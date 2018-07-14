@@ -45,6 +45,7 @@
             android:orientation="vertical">
 
             <RelativeLayout
+                android:id="@+id/hairDressingForm"
                 android:layout_width="match_parent"
                 android:layout_height="1500dp">
 
@@ -173,19 +174,6 @@
                     android:textSize="20sp"
                     app:fontFamily="@font/lato_light" />
 
-                <TextView
-                    android:id="@+id/fourthQuestionTextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/stylistsRecyclerView"
-                    android:layout_centerHorizontal="true"
-                    android:paddingBottom="5dp"
-                    android:paddingTop="15dp"
-                    android:text="When would you like to come?"
-                    android:textColor="@color/colorTextLight"
-                    android:textSize="20sp"
-                    app:fontFamily="@font/lato_light" />
-
                 <RadioGroup
                     android:id="@+id/secondQRadioButton"
                     android:layout_width="wrap_content"
@@ -275,43 +263,64 @@
                     android:textSize="20sp"
                     app:fontFamily="@font/lato_light" />
 
-                <EditText
-                    android:id="@+id/editDate"
-                    android:layout_width="650px"
-                    android:layout_height="92px"
-                    android:layout_below="@+id/fourthQuestionTextView"
-                    android:layout_centerHorizontal="true"
-                    android:background="@drawable/date_edittext"
-                    android:ems="10"
-                    android:focusable="false"
-                    android:hint="dd/mm/yy"
-                    android:inputType="date"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="40dp"
-                    android:textColor="@color/colorTextLight"
-                    android:textColorHint="@color/colorTextLight"
-                    android:textColorLink="@color/ColorPrimaryDarkest"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/stylistAvailableTextView"
-                    android:layout_width="wrap_content"
+                <RelativeLayout
+                    android:id="@+id/onPremiseRelativeLayout"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/thirdQRadioButton"
-                    android:layout_centerHorizontal="true"
-                    android:paddingTop="10dp"
-                    android:text="Available Hair Dressers"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textColorLink="@color/ColorPrimaryDarkest"
-                    android:textSize="18sp"
-                    app:fontFamily="@font/lato_light" />
+                    android:paddingTop="10dp">
 
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/stylistsRecyclerView"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:layout_below="@+id/stylistAvailableTextView"
-                    android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:id="@+id/stylistAvailableTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Available Hair Dressers"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorLink="@color/ColorPrimaryDarkest"
+                        android:textSize="18sp"
+                        app:fontFamily="@font/lato_light" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/stylistsRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_below="@+id/stylistAvailableTextView"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:id="@+id/fourthQuestionTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/stylistsRecyclerView"
+                        android:layout_centerHorizontal="true"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="15dp"
+                        android:text="When would you like to come?"
+                        android:textColor="@color/colorTextLight"
+                        android:textSize="20sp"
+                        app:fontFamily="@font/lato_light" />
+
+                    <EditText
+                        android:id="@+id/editDate"
+                        android:layout_width="650px"
+                        android:layout_height="92px"
+                        android:layout_below="@+id/fourthQuestionTextView"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/date_edittext"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:hint="dd/mm/yy"
+                        android:inputType="date"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="40dp"
+                        android:textColor="@color/colorTextLight"
+                        android:textColorHint="@color/colorTextLight"
+                        android:textColorLink="@color/ColorPrimaryDarkest"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
 
             </RelativeLayout>
 

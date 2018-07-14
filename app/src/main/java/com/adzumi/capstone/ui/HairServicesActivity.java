@@ -14,6 +14,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.adzumi.capstone.R;
@@ -35,6 +36,7 @@ public class HairServicesActivity extends AppCompatActivity implements View.OnCl
     @BindView(R.id.thirdQRadioButton) RadioGroup mThirdQRadioButton;
     @BindView(R.id.stylistAvailableTextView) TextView mStylistAvailableTextView;
     @BindView(R.id.stylistsRecyclerView) RecyclerView mstylistsRecyclerView;
+    @BindView(R.id.onPremiseRelativeLayout) RelativeLayout mOnPremiseRelativeLayout;
     Context context = this;
     Calendar myCalendar = Calendar.getInstance();
     String dateFormat = "dd.MM.yyyy";
@@ -47,8 +49,7 @@ public class HairServicesActivity extends AppCompatActivity implements View.OnCl
         setContentView(R.layout.activity_hair_services);
         ButterKnife.bind(this);
 
-        mStylistAvailableTextView.setVisibility(View.GONE);
-        mstylistsRecyclerView.setVisibility(View.GONE);
+        mOnPremiseRelativeLayout.setVisibility(View.GONE);
 
         // init - set date to current date
         long currentdate = System.currentTimeMillis();
@@ -76,11 +77,9 @@ public class HairServicesActivity extends AppCompatActivity implements View.OnCl
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // TODO Auto-generated method stub
                 if (mYesRadioButton.isChecked() == true) {
-                    mStylistAvailableTextView.setVisibility(View.VISIBLE);
-                    mstylistsRecyclerView.setVisibility(View.VISIBLE);
+                    mOnPremiseRelativeLayout.setVisibility(View.VISIBLE);
                 }else{
-                    mStylistAvailableTextView.setVisibility(View.GONE);
-                    mstylistsRecyclerView.setVisibility(View.GONE);
+                    mOnPremiseRelativeLayout.setVisibility(View.GONE);
                 }
 
             }
