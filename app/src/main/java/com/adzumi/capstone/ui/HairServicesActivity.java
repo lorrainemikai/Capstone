@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.adzumi.capstone.R;
 import com.google.firebase.auth.FirebaseAuth;
@@ -26,6 +27,7 @@ public class HairServicesActivity extends AppCompatActivity implements View.OnCl
 
     @BindView(R.id.my_toolbar) Toolbar myToolbar;
     @BindView(R.id.editDate) EditText editDate;
+    @BindView(R.id.toolbar_text) TextView toolbarText;
     Context context = this;
     Calendar myCalendar = Calendar.getInstance();
     String dateFormat = "dd.MM.yyyy";
@@ -60,6 +62,16 @@ public class HairServicesActivity extends AppCompatActivity implements View.OnCl
 
         editDate.setOnClickListener(this);
         setSupportActionBar(myToolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+
+        myToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+            }
+        });
     }
 
     @Override

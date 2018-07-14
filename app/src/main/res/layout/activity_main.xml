@@ -106,7 +106,7 @@
             android:layout_marginStart="30dp"
             android:fontFamily="@font/lato_light"
             android:gravity="center"
-            android:text="Welcome! With Capstone App, consider yourself backed up with services on the go."
+            android:text="Welcome! With Micasa Salon &amp; Spa App, consider yourself equipped with all the great tools you need to access our Salon, Spa or Wellness business services."
             android:textSize="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
