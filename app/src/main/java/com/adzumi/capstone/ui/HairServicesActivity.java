@@ -43,6 +43,7 @@ public class HairServicesActivity extends AppCompatActivity implements View.OnCl
     DatePickerDialog.OnDateSetListener date;
     SimpleDateFormat sdf = new SimpleDateFormat(dateFormat, Locale.FRENCH);
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -85,6 +86,7 @@ public class HairServicesActivity extends AppCompatActivity implements View.OnCl
             }
         });
 
+        editDate.setHint("dd.MM.yyyy");
         editDate.setOnClickListener(this);
         setSupportActionBar(myToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
