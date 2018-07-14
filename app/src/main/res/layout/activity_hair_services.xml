@@ -49,6 +49,40 @@
                 android:layout_height="600dp">
 
                 <RadioGroup
+                    android:id="@+id/thirdQRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/thirdQuestionTextView2"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/yesRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:checked="false"
+                        android:fontFamily="@font/lato_light"
+                        android:text="Yes"
+                        android:textColor="@color/colorTextLight"
+                        android:textColorLink="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:checked="false"
+                        android:fontFamily="@font/lato_light"
+                        android:text="No"
+                        android:textColor="@color/colorTextLight"
+                        android:textColorLink="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+                <RadioGroup
                     android:id="@+id/firstQRadioButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -130,20 +164,31 @@
                     android:id="@+id/thirdQuestionTextView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignStart="@+id/firstQuestionTextView"
-                    android:layout_marginBottom="118dp"
+                    android:layout_below="@+id/secondQRadioButton"
+                    android:layout_centerHorizontal="true"
+                    android:text="Would you like the hair dresser to come ?"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="20sp"
+                    app:fontFamily="@font/lato_light" />
+
+                <TextView
+                    android:id="@+id/fourthQuestionTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/editDate"
+                    android:layout_centerHorizontal="true"
                     android:text="When would you like to come?"
                     android:textColor="@color/colorTextLight"
-                    android:textSize="25sp"
+                    android:textSize="20sp"
                     app:fontFamily="@font/lato_light" />
 
                 <RadioGroup
                     android:id="@+id/secondQRadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignStart="@+id/firstQuestionTextView"
+                    android:layout_alignParentStart="true"
                     android:layout_below="@+id/secondQuestionTextView"
+                    android:layout_marginStart="39dp"
                     android:orientation="vertical">
 
                     <RadioButton
@@ -228,18 +273,30 @@
 
                 <EditText
                     android:id="@+id/editDate"
-                    android:layout_width="wrap_content"
+                    android:layout_width="271dp"
                     android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/firstQuestionTextView"
-                    android:layout_alignStart="@+id/firstQuestionTextView"
-                    android:layout_below="@+id/thirdQuestionTextView2"
-                    android:layout_marginTop="-118dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="115dp"
                     android:ems="10"
                     android:focusable="false"
                     android:hint="dd/mm/yy"
                     android:inputType="date"
                     android:textColor="@color/colorTextLight"
-                    android:textColorLink="@color/ColorPrimaryDarkest" />
+                    android:textColorLink="@color/ColorPrimaryDarkest"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/stylistAvailableTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/thirdQRadioButton"
+                    android:layout_centerHorizontal="true"
+                    android:text="View Available Hair Dressers"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textColorLink="@color/ColorPrimaryDarkest"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/lato_light" />
 
             </RelativeLayout>
 

@@ -11,6 +11,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.adzumi.capstone.R;
@@ -28,6 +30,9 @@ public class HairServicesActivity extends AppCompatActivity implements View.OnCl
     @BindView(R.id.my_toolbar) Toolbar myToolbar;
     @BindView(R.id.editDate) EditText editDate;
     @BindView(R.id.toolbar_text) TextView toolbarText;
+    @BindView(R.id.yesRadioButton) RadioButton mYesRadioButton;
+    @BindView(R.id.thirdQRadioButton) RadioGroup mThirdQRadioButton;
+    @BindView(R.id.stylistAvailableTextView) TextView mStylistAvailableTextView;
     Context context = this;
     Calendar myCalendar = Calendar.getInstance();
     String dateFormat = "dd.MM.yyyy";
@@ -39,6 +44,8 @@ public class HairServicesActivity extends AppCompatActivity implements View.OnCl
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hair_services);
         ButterKnife.bind(this);
+
+        mStylistAvailableTextView.setVisibility(View.GONE);
 
         // init - set date to current date
         long currentdate = System.currentTimeMillis();
@@ -59,6 +66,20 @@ public class HairServicesActivity extends AppCompatActivity implements View.OnCl
             }
 
         };
+
+        mThirdQRadioButton.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                // TODO Auto-generated method stub
+                if (mYesRadioButton.isChecked() == true) {
+                    mStylistAvailableTextView.setVisibility(View.VISIBLE);
+                }else{
+                    mStylistAvailableTextView.setVisibility(View.GONE);
+                }
+
+            }
+        });
 
         editDate.setOnClickListener(this);
         setSupportActionBar(myToolbar);
