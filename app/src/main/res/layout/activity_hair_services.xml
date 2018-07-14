@@ -46,7 +46,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="600dp">
+                android:layout_height="1500dp">
 
                 <RadioGroup
                     android:id="@+id/thirdQRadioButton"
@@ -155,6 +155,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/firstQRadioButton"
                     android:layout_centerHorizontal="true"
+                    android:paddingTop="15dp"
                     android:text="What service would you like?"
                     android:textColor="@color/colorTextLight"
                     android:textSize="20sp"
@@ -166,6 +167,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/secondQRadioButton"
                     android:layout_centerHorizontal="true"
+                    android:paddingTop="15dp"
                     android:text="Would you like the hair dresser to come ?"
                     android:textColor="@color/colorTextLight"
                     android:textSize="20sp"
@@ -175,8 +177,9 @@
                     android:id="@+id/fourthQuestionTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_above="@+id/editDate"
+                    android:layout_below="@+id/stylistsRecyclerView"
                     android:layout_centerHorizontal="true"
+                    android:paddingTop="15dp"
                     android:text="When would you like to come?"
                     android:textColor="@color/colorTextLight"
                     android:textSize="20sp"
@@ -275,9 +278,8 @@
                     android:id="@+id/editDate"
                     android:layout_width="271dp"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/fourthQuestionTextView"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="115dp"
                     android:ems="10"
                     android:focusable="false"
                     android:hint="dd/mm/yy"
@@ -292,11 +294,19 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/thirdQRadioButton"
                     android:layout_centerHorizontal="true"
-                    android:text="View Available Hair Dressers"
+                    android:paddingTop="10dp"
+                    android:text="Available Hair Dressers"
                     android:textColor="@color/colorPrimaryDark"
                     android:textColorLink="@color/ColorPrimaryDarkest"
                     android:textSize="18sp"
                     app:fontFamily="@font/lato_light" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/stylistsRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/stylistAvailableTextView"
+                    android:layout_centerHorizontal="true" />
 
             </RelativeLayout>
 
@@ -305,7 +315,7 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/bookButton"
         android:layout_width="345dp"
         android:layout_height="33dp"
         android:layout_marginBottom="8dp"

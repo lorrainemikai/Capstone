@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -33,6 +34,7 @@ public class HairServicesActivity extends AppCompatActivity implements View.OnCl
     @BindView(R.id.yesRadioButton) RadioButton mYesRadioButton;
     @BindView(R.id.thirdQRadioButton) RadioGroup mThirdQRadioButton;
     @BindView(R.id.stylistAvailableTextView) TextView mStylistAvailableTextView;
+    @BindView(R.id.stylistsRecyclerView) RecyclerView mstylistsRecyclerView;
     Context context = this;
     Calendar myCalendar = Calendar.getInstance();
     String dateFormat = "dd.MM.yyyy";
@@ -46,6 +48,7 @@ public class HairServicesActivity extends AppCompatActivity implements View.OnCl
         ButterKnife.bind(this);
 
         mStylistAvailableTextView.setVisibility(View.GONE);
+        mstylistsRecyclerView.setVisibility(View.GONE);
 
         // init - set date to current date
         long currentdate = System.currentTimeMillis();
@@ -74,8 +77,10 @@ public class HairServicesActivity extends AppCompatActivity implements View.OnCl
                 // TODO Auto-generated method stub
                 if (mYesRadioButton.isChecked() == true) {
                     mStylistAvailableTextView.setVisibility(View.VISIBLE);
+                    mstylistsRecyclerView.setVisibility(View.VISIBLE);
                 }else{
                     mStylistAvailableTextView.setVisibility(View.GONE);
+                    mstylistsRecyclerView.setVisibility(View.GONE);
                 }
 
             }
@@ -110,7 +115,7 @@ public class HairServicesActivity extends AppCompatActivity implements View.OnCl
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.options_menu, menu);
+        getMenuInflater().inflate(R.menu.title_menu, menu);
         return true;
     }
 
