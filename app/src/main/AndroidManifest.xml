@@ -3,9 +3,11 @@
     package="com.adzumi.capstone">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <uses-feature
         android:glEsVersion="0x00020000"
-        android:required="true"/>
+        android:required="true" />
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
@@ -16,20 +18,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_api_key"/>
+            android:value="@string/google_api_key" />
 
         <activity
             android:name=".ui.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -48,18 +49,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.MainActivity" />
         </activity>
-
         <activity
             android:name=".ui.HairIntroActivity"
             android:theme="@style/AppTheme">
-
-             <meta-data
-             android:name="android.support.PARENT_ACTIVITY"
-             android:value=".ui.MainActivity">
-
-             </meta-data>
-
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.MainActivity"></meta-data>
         </activity>
+        <activity
+            android:name=".clientActivity"
+            android:label="@string/title_activity_client"></activity>
     </application>
 
 </manifest>
