@@ -41,8 +41,9 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="57dp"
-        android:layout_below="@+id/biotextView"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
         android:fontFamily="@font/lato_black"
         android:text="Points:794"
         android:textAppearance="@style/TextAppearance.AppCompat"
@@ -82,5 +83,12 @@
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@color/cardview_dark_background"
         android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/bioEditText"
+        android:layout_width="283dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/biotextView"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
