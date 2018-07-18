@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.adzumi.capstone.ClientActivity;
 import com.adzumi.capstone.R;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -61,10 +62,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void logout() {
-        FirebaseAuth.getInstance().signOut();
-        Intent intent = new Intent(HomeActivity.this, MainActivity.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//        FirebaseAuth.getInstance().signOut();
+        Intent intent = new Intent(HomeActivity.this, ClientActivity.class);
         startActivity(intent);
-        finish();
     }
 }

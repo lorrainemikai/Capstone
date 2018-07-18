@@ -57,7 +57,7 @@
                 android:value=".ui.MainActivity"></meta-data>
         </activity>
         <activity
-            android:name=".clientActivity"
+            android:name=".ClientActivity"
             android:label="@string/title_activity_client"></activity>
     </application>
 
