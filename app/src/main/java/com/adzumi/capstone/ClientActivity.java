@@ -30,5 +30,6 @@ public class ClientActivity extends Activity implements View.OnClickListener{
     public void onClick(View view) {
 if (view==mBioTextView){
     mBioEditText.setVisibility(View.VISIBLE);
-}    }
+}
+    }
 }
